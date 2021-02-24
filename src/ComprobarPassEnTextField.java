@@ -127,11 +127,11 @@ class PanelIngreso extends JPanel {
 
 		@Override
 		public void insertUpdate(DocumentEvent e) {
-			if (comprobarPass(campoPass.getText())) {
+			if (comprobarPass(campoPass.getPassword())) {
 				passCorrecto.setText("Password Correcto");
 				passCorrecto.setForeground(Color.GREEN);
 			} else {
-				passCorrecto.setText("Password Incorrecto");
+				passCorrecto.setText("Password Invalido");
 				passCorrecto.setForeground(Color.RED);
 			}
 
@@ -139,13 +139,13 @@ class PanelIngreso extends JPanel {
 
 		@Override
 		public void removeUpdate(DocumentEvent e) {
-			if (comprobarPass(campoPass.getText())) {
+			if (comprobarPass(campoPass.getPassword())) {
 				passCorrecto.setForeground(Color.GREEN);
 				passCorrecto.setText("Password Correcto");
 
 			} else {
 				passCorrecto.setForeground(Color.RED);
-				passCorrecto.setText("Password Incorrecto");
+				passCorrecto.setText("Password Invalido");
 
 			}
 
@@ -157,10 +157,11 @@ class PanelIngreso extends JPanel {
 
 		}
 
-		private boolean comprobarPass(String password) {
+		private boolean comprobarPass(char[] passwordChar) {
 
 			// Password must contain at least one letter, at least one number, and be longer
 			// than eigth charaters.
+			String password = String.copyValueOf(passwordChar);
 
 			String rex = "^(?=.*[0-9]+.*)(?=.*[a-zA-Z]+.*)[0-9a-zA-Z]{8,}$";
 
