@@ -1,0 +1,47 @@
+//Ctrl+Alt F Identacion automatica
+
+Tipo de datos primitivos
+
+numericos:
+int
+short -32768 a 32767
+long 
+byte -128 a 127
+
+float 4 bytes (decimal)
+double 8 bytes (decimal)
+
+Caracteres
+char 'a'
+
+Validacion boolean
+True or false
+
+> mayor que
+< menor que
+<> mayor o menos que
+!= distinto
+== igual que
+&& y logico
+
+++ incremento
+-- decremento
++= nro incremento (ejemplo +=2)
+-= nro decremento 
+
++ suma, une o concatena
+
+    \n -----> Nueva Linea.
+    \t -----> Tabulador.
+    \r -----> Retroceso de Carro.
+    \f -----> Comienzo de Pagina.
+    \b -----> Borrado a la Izquierda.
+    \\ -----> El carácter barra inversa ( \ ).
+    \' -----> El carácter prima simple ( ' ).
+    \" -----> El carácter prima doble o bi-prima ( " ).
+
+
+Factoriales
+6!
+6x5x4x3x2x1
+
