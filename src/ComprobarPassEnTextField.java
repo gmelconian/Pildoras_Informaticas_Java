@@ -12,6 +12,7 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
+import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
@@ -45,7 +46,7 @@ final class MarcoTexto2 extends JFrame {
 
 class PanelIngreso extends JPanel {
 	JTextField campoEmail;
-	JTextField campoPass;
+	JPasswordField campoPass;
 	JLabel email;
 	JLabel passCorrecto;
 
@@ -74,7 +75,7 @@ class PanelIngreso extends JPanel {
 		JPanel panelPass = new JPanel();
 		panelPass.setLayout(new FlowLayout(FlowLayout.LEFT));
 
-		campoPass = new JTextField(20);
+		campoPass = new JPasswordField(20);
 
 		passCorrecto = new JLabel("Más de 8 caracteres, solo letras y numeros");
 
